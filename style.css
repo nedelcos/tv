@@ -1,0 +1,70 @@
+body, html { 
+    overflow-x: hidden; 
+    overflow-y: hidden;
+}
+
+nav {
+    display: none;
+}
+
+.inner-content {
+    display: inline-block;
+    height: 80vh;
+    z-index: 5000;
+}
+
+.full-height {
+    height: 100vh;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    color: #000;
+    background: rgba(255, 255, 255, 0.99);
+    text-align: left;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.1s, opacity 0.0s linear;
+    padding: 20px;
+}
+
+.caption-transparent {
+    background: rgba(255, 255, 255, 0.89);
+}
+
+.inner-caption {
+    position: relative;
+}
+
+.p-thumb:hover > .caption {
+    height: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.inner-cap > * {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inner-cap {
+    height: 100%;
+    margin: 0 auto;
+    display: table;
+}
+
+.p-thumb {
+    height: 100%;
+}
