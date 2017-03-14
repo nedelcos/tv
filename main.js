@@ -9,6 +9,11 @@ $(function () {
                 , "opacity": 1
             });
             
+            $(".p-thumb").css({
+                "webkit-filter": "opacity(5%)",
+                "filter": "opacity(5%)"
+            });
+            
             captionVisible = true;
         }
         
@@ -16,6 +21,11 @@ $(function () {
             $(".caption").css({
                 "visibility": "hidden"
                 , "opacity": 0
+            });
+            
+            $(".p-thumb").css({
+                "webkit-filter": "opacity(100%)",
+                "filter": "opacity(100%)"
             });
             
             captionVisible = false;
@@ -30,6 +40,11 @@ $(function () {
                     "visibility": "hidden", 
                     "opacity": 0
                 });
+                
+                $(".p-thumb").css({
+                "webkit-filter": "opacity(100%)",
+                "filter": "opacity(100%)"
+            });
             
                 captionVisible = false;
             }
