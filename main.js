@@ -1,20 +1,20 @@
 var captionVisible = false;
 
+var infoCounter = 1;
+
+
 
 $(function () {
     $("body").click(function (e) {
-        if (e.target.class == "inner-content" || $(e.target).parents(".inner-content").size()) {
+        if (e.target.class == "proj-img" || $(e.target).parents(".proj-img").size()) {
             $(".caption").css({
                 "visibility": "visible"
                 , "opacity": 1
             });
             
-            $(".p-thumb").css({
-                "webkit-filter": "opacity(5%)",
-                "filter": "opacity(5%)"
-            });
-            
             captionVisible = true;
+            
+            
         }
         
         else if (e.target.class == "caption" || $(e.target).parents(".caption").size()) {
@@ -23,12 +23,9 @@ $(function () {
                 , "opacity": 0
             });
             
-            $(".p-thumb").css({
-                "webkit-filter": "opacity(100%)",
-                "filter": "opacity(100%)"
-            });
-            
             captionVisible = false;
+            
+            
         }
         
         else {
@@ -40,16 +37,20 @@ $(function () {
                     "visibility": "hidden", 
                     "opacity": 0
                 });
-                
-                $(".p-thumb").css({
-                "webkit-filter": "opacity(100%)",
-                "filter": "opacity(100%)"
-            });
-            
+
                 captionVisible = false;
+                
+                if (infoCounter > 0) {
+                    infoCounter = infoCounter + 1;
+                };
+                
+                if (infoCounter == 3) {
+                        alert("wtf man !?")
+                }
             }
             
             else if (captionVisible == false) {
+                infoCounter = 0;
                 
                 switch (window.location.hash) {
                     case '':

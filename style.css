@@ -53,6 +53,7 @@ nav {
     visibility: hidden;
     opacity: 0;
     cursor: crosshair;
+    background: #ccc;
 }
 
 .caption-transparent {
@@ -63,11 +64,7 @@ nav {
     position: relative;
 }
 
-.p-thumb:hover > .caption {
-    height: 100%;
-    visibility: visible;
-    opacity: 1;
-}
+
 
 .inner-cap > * {
     display: table-cell;
@@ -81,10 +78,10 @@ nav {
 }
 
 .p-thumb {
-    max-height: 75vh;
     width: auto;
     cursor: crosshair;
     max-width: 100%;
+    padding: 0;
 }
 
 .project-desc p {
