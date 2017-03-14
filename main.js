@@ -54,19 +54,19 @@ $(function () {
                 
                 switch (window.location.hash) {
                     case '':
-                        window.location = "file:///C:/Users/neded/Documents/GitHub/tv/index.html#second"
+                        window.location += "#second"
                         break;
                     case '#first':
-                        window.location = "file:///C:/Users/neded/Documents/GitHub/tv/index.html#second"
+                         window.location = window.location.hostname += "#second"
                         break;
                     case '#second':
-                        window.location = "file:///C:/Users/neded/Documents/GitHub/tv/index.html#third"
+                         window.location = window.location.hostname += "#third"
                         break;
                     case '#third':
-                        window.location = "file:///C:/Users/neded/Documents/GitHub/tv/index.html#forth"
+                        window.location = window.location.hostname += "#forth"
                         break;
                     case '#forth':
-                        window.location = "file:///C:/Users/neded/Documents/GitHub/tv/index.html#first"
+                         window.location = window.location.hostname += "#first"
                         break;    
                 }
                 
