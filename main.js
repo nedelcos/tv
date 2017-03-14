@@ -57,16 +57,16 @@ $(function () {
                         window.location += "#second"
                         break;
                     case '#first':
-                         window.location = window.location.hostname += "#second"
+                         window.location += "#second"
                         break;
                     case '#second':
-                         window.location = window.location.hostname += "#third"
+                         window.location += "#third"
                         break;
                     case '#third':
-                        window.location = window.location.hostname += "#forth"
+                        window.location += "#forth"
                         break;
                     case '#forth':
-                         window.location = window.location.hostname += "#first"
+                         window.location += "#first"
                         break;    
                 }
                 
