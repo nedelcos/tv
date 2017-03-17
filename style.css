@@ -84,8 +84,16 @@ nav {
     padding: 0;
 }
 
+.project-desc {
+    padding: 5em;
+}
+
 .project-desc p {
-    max-width: 800px;
+    font-size: 1em;
+}
+
+.project-title {
+    margin-bottom: 30px;
 }
 
 .after-img {
@@ -96,4 +104,25 @@ nav {
     height: 100%;
     display: none;
     color: #FFF;
+}
+
+.proj-img {
+    max-height: 80vh;
+}
+
+
+@media screen and (min-width: 768px) {
+    .proj-img {
+        padding: 0 60px;
+    }
+    
+    .project-title {
+        margin-bottom: 50px;
+    }
+    
+    .project-desc p {
+        font-size: 1.5em;
+    }
+}
+
 

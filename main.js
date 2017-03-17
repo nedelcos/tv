@@ -2,11 +2,13 @@ var captionVisible = false;
 
 var infoCounter = 1;
 
+var windowLocation = window.location;
+
 
 
 $(function () {
     $("body").click(function (e) {
-        if (e.target.class == "proj-img" || $(e.target).parents(".proj-img").size()) {
+        if (e.target.class == "proj-img-cont" || $(e.target).parents(".proj-img-cont").size()) {
             $(".caption").css({
                 "visibility": "visible"
                 , "opacity": 1
@@ -53,22 +55,22 @@ $(function () {
                 infoCounter = 0;
                 
                 switch (window.location.hash) {
-                    case '':
-                        window.location += "#second"
-                        break;
-                    case '#first':
-                         window.location += "#second"
-                        break;
-                    case '#second':
-                         window.location += "#third"
-                        break;
-                    case '#third':
-                        window.location += "#forth"
-                        break;
-                    case '#forth':
-                         window.location += "#first"
-                        break;    
-                }
+                     case '':
+                         window.location = window.location.pathname + "#second"
+                         break;
+                     case '#first':
+                         window.location = window.location.pathname + "#second"
+                         break;
+                     case '#second':
+                         window.location = window.location.pathname + "#third"
+                         break;
+                     case '#third':
+                         window.location = window.location.pathname + "#forth"
+                         break;
+                     case '#forth':
+                         window.location = window.location.pathname + "#first"
+                         break;    
+                 }
                 
             }
         }
