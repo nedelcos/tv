@@ -14,6 +14,8 @@ $(function () {
                 , "opacity": 1
             });
             
+            $('.proj-img-cont').addClass('height-100');
+            
             captionVisible = true;
             
             
@@ -24,6 +26,8 @@ $(function () {
                 "visibility": "hidden"
                 , "opacity": 0
             });
+            
+            $('.proj-img-cont').removeClass('height-100');
             
             captionVisible = false;
             
@@ -39,6 +43,8 @@ $(function () {
                     "visibility": "hidden", 
                     "opacity": 0
                 });
+                
+                $('.proj-img-cont').removeClass('height-100');
 
                 captionVisible = false;
                 
