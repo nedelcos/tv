@@ -9,6 +9,10 @@ body, html {
     cursor: url(trump.cur), auto;
 }
 
+.body-background {
+    background: #ccc;
+}
+
 p {
     font-family: "monospaceB";
 }
@@ -138,6 +142,10 @@ nav {
     
     .project-desc {
         padding: 5em;
+    }
+    
+    .body-background {
+        background: #fff;
     }
 }
 

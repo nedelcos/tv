@@ -14,7 +14,11 @@ $(function () {
                 , "opacity": 1
             });
             
-            $('.proj-img-cont').addClass('height-100');
+            $('.p-thumb').addClass('height-100');
+            
+            $('body').addClass('body-background');
+            
+            $('.outer').offset().top;
             
             captionVisible = true;
             
@@ -27,7 +31,9 @@ $(function () {
                 , "opacity": 0
             });
             
-            $('.proj-img-cont').removeClass('height-100');
+            $('.p-thumb').removeClass('height-100');
+            
+            $('body').removeClass('body-background');
             
             captionVisible = false;
             
@@ -44,7 +50,9 @@ $(function () {
                     "opacity": 0
                 });
                 
-                $('.proj-img-cont').removeClass('height-100');
+                $('.p-thumb').removeClass('height-100');
+                
+                $('body').removeClass('body-background');
 
                 captionVisible = false;
                 
