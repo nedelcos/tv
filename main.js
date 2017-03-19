@@ -4,7 +4,17 @@ var infoCounter = 1;
 
 var windowLocation = window.location;
 
+jQuery(function ($) {
+    'use strict';
+    var windowWidth = $(window).width();
 
+    $(window).resize(function () {
+        if (windowWidth !== $(window).width()) {
+            location.reload();
+            return;
+        }
+    });
+});
 
 $(function () {
     $("body").click(function (e) {
