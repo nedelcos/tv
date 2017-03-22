@@ -92,8 +92,17 @@ $(function () {
                          window.location = window.location.pathname + "#forth"
                          break;
                      case '#forth':
+                         window.location = window.location.pathname + "#fifth"
+                         break;
+                    case '#fifth':
+                         window.location = window.location.pathname + "#sixth"
+                         break; 
+                    case '#sixth':
+                         window.location = window.location.pathname + "#seventh"
+                         break;
+                    case '#seventh':
                          window.location = window.location.pathname + "#first"
-                         break;    
+                         break;      
                  }
                 
             }

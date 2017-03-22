@@ -128,7 +128,7 @@ nav {
 
 @media screen and (min-width: 768px) {
     .outer {
-        padding: 0 60px;
+        padding: 0 100px;
     }
     
     .project-title {
@@ -154,6 +154,13 @@ nav {
     .body-background {
         background: #fff;
     }
+}
+
+@media screen and (min-width: 1300px) {
+    .outer {
+        padding: 0 200px;
+    }
+
 }
 
 
